@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Secreto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="menu">
+
+        <a href="index.html">Inicio</a>
+        <a href="About.html">Sobre Nosotros</a>
+
+        <div class="submenu">
+
+            <div class="submenu-contenido">
+                <a href="Proyectos.html">Proyectos</a>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<main class="juego">
+
+<h1>Número Secreto</h1>
+
+<img src="assets/NS.jpg" class="imagen-juego">
+
+<p>Adivina el número del 1 al 10</p>
+
+
+<p id="modo">  3 intentos</p>
+
+<input type="number" id="numeroUsuario" placeholder="Ingresa un número">
+
+<br><br>
+
+<button onclick="verificarNumero()">Intentar</button>
+<button onclick="nuevoJuego()">Nuevo Juego</button>
+
+<p id="mensaje"></p>
+<p id="intentos"></p>
+
+</main>
+
+<footer>
+    Grupo Sintaxis Zero
+</footer>
+
+<script src="scripts/NS.js"></script>
+
+</body>
+</html>
