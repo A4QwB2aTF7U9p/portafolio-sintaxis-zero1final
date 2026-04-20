@@ -57,11 +57,8 @@ https://sites.google.com/view/sintaxiszero/inicio
 
 ### GitHub
 
-(portafolio-sintaxis-zero1final.vercel.app)
 
-(portafolio-sintaxis-zero1fi-git-510e5d-am4563603-7905s-projects.vercel.app)
-
-(portafolio-sintaxis-zero1final-gw0odzvob.vercel.app)
+(https://github.com/A4QwB2aTF7U9p/portafolio-sintaxis-zero1final/tree/main/Portafolio-Sintaxis-Zero)
 
 
 ### Vercel
