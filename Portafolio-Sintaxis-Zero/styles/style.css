@@ -1,31 +1,41 @@
 body {
-    background-color: black;
+    background: linear-gradient(135deg, #000000, #111827);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.header {
+/* HEADER */
+header {
+    background-color: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
     padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
 }
 
 .menu {
     display: flex;
+    justify-content: center;
     gap: 40px;
-    padding-left: 50px;
 }
 
 .menu a {
-    color: #1e3a8a;
+    color: #60a5fa;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
+.menu a:hover {
+    color: #facc15;
+    transform: scale(1.05);
+}
+
+/* CONTENIDO GENERAL */
 .presentacion {
     padding: 50px;
 }
@@ -36,11 +46,12 @@ body {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 40px;
+    text-align: center;
 }
 
 span {
-    color: #1e3a8a;
+    color: #60a5fa;
 }
 
 p {
@@ -50,59 +61,63 @@ p {
 
 h2 {
     margin-top: 40px;
-    color: #1e3a8a;
+    color: #60a5fa;
+    text-align: center;
 }
 
+/* TARJETAS DE INTEGRANTES */
 .integrantes {
     display: flex;
     justify-content: center;
     gap: 40px;
     margin-top: 40px;
-    margin-bottom: 60px;
+    flex-wrap: wrap;
 }
 
 .persona {
     text-align: center;
     width: 250px;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.persona:hover {
+    transform: translateY(-8px);
 }
 
 .persona img {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
+/* BOTONES LINKS */
 .links {
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     gap: 15px;
 }
 
 .links a {
-    border: 2px solid #1e3a8a;
+    border: 2px solid #60a5fa;
     padding: 8px 20px;
-    color: #1e3a8a;
+    color: #60a5fa;
     text-decoration: none;
     border-radius: 10px;
-    font-size: 14px;
     transition: 0.3s;
 }
 
 .links a:hover {
-    background-color: #1e3a8a;
-    color: white;
+    background-color: #60a5fa;
+    color: black;
 }
 
-/* FOOTER */
-footer {
-    border-top: 2px solid #1e3a8a;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
-
+/* BLOG */
 .blog-home {
     text-align: center;
     margin-top: 40px;
@@ -110,53 +125,71 @@ footer {
 
 .Blog-img {
     width: 400px;
-    border-radius: 10px;
+    max-width: 90%;
+    border-radius: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
 }
 
 .descripcion {
     font-size: 14px;
-    margin-top: 6px;
+    margin-top: 10px;
     color: #ccc;
 }
 
+/* JUEGO */
 .juego {
+    text-align: center;
+    width: 450px;
+    max-width: 90%;
+    margin: auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+}
+
+.imagen-juego {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+/* INPUT */
+input {
+    padding: 12px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 70%;
     text-align: center;
 }
 
-input {
-    padding: 10px;
-    font-size: 18px;
-    margin-top: 20px;
-    border-radius: 8px;
-    border: none;
-}
-
-.botones {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
+/* BOTONES */
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     font-size: 16px;
     background-color: #1e3a8a;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #152a63;
+    background-color: #2563eb;
+    transform: scale(1.05);
 }
 
+/* MENSAJES */
 #mensaje {
     margin-top: 20px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 #intentos {
@@ -164,23 +197,26 @@ button:hover {
     color: #ccc;
 }
 
-
 #modo {
-    margin-top: 15px;
-    font-size: 20px;
+    margin-top: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #facc15;
     background-color: #1e3a8a;
     display: inline-block;
-    padding: 8px 15px;
-    border-radius: 10px;
+    padding: 10px 20px;
+    border-radius: 12px;
 }
-
 
 .perdido {
     color: #ef4444 !important;
 }
 
-.persona {
+/* FOOTER */
+footer {
+    border-top: 1px solid rgba(255,255,255,0.1);
     text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    background-color: rgba(255,255,255,0.03);
 }
