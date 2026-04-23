@@ -12,17 +12,14 @@
 
 <header>
     <nav class="menu">
-
         <a href="index.html">Inicio</a>
         <a href="About.html">Sobre Nosotros</a>
 
         <div class="submenu">
-
             <div class="submenu-contenido">
                 <a href="Proyectos.html">Proyectos</a>
             </div>
         </div>
-
     </nav>
 </header>
 
@@ -35,9 +32,10 @@
 <p>Adivina el número del 1 al 10</p>
 
 
-<p id="modo">  3 intentos</p>
+<p id="modo"> Modo d: 3 intentos</p>
 
-<input type="number" id="numeroUsuario" placeholder="Ingresa un número">
+<!--  INPUT LIMITADO -->
+<input type="number" id="numeroUsuario" placeholder="Ingresa un número" min="1" max="10" step="1">
 
 <br><br>
 
@@ -53,7 +51,7 @@
     Grupo Sintaxis Zero
 </footer>
 
-<script src="scripts/NS.JS"></script>
+<script src="scripts/NS.js"></script>
 
 </body>
 </html>
