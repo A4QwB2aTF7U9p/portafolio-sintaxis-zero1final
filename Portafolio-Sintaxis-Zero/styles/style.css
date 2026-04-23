@@ -1,122 +1,186 @@
-/* ===== HERO INDEX ===== */
-.hero {
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    padding: 60px 40px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.hero-texto {
-    max-width: 500px;
+.header {
+    padding: 20px;
 }
 
-.hero-texto h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    line-height: 1.2;
+.menu {
+    display: flex;
+    gap: 40px;
+    padding-left: 50px;
 }
 
-.hero-texto p {
-    font-size: 20px;
-    color: #d1d5db;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.hero-imagen img {
-    width: 420px;
-    max-width: 100%;
-    border-radius: 20px;
-    box-shadow: 0px 8px 25px rgba(0,0,0,0.5);
-}
-
-/* BOTONES */
-.hero-botones {
-    margin-top: 20px;
-}
-
-.btn-principal,
-.btn-secundario {
+.menu a {
+    color: #1e3a8a;
     text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 10px;
+    font-size: 20px;
     font-weight: bold;
-    margin-right: 10px;
-    transition: 0.3s;
-    display: inline-block;
 }
 
-.btn-principal {
-    background-color: #2563eb;
-    color: white;
+.presentacion {
+    padding: 50px;
 }
 
-.btn-principal:hover {
-    background-color: #1d4ed8;
-    transform: scale(1.05);
-}
-
-.btn-secundario {
-    border: 2px solid #2563eb;
-    color: #2563eb;
-}
-
-.btn-secundario:hover {
-    background-color: #2563eb;
-    color: white;
-}
-
-/* SECCIONES */
 .contenido {
     width: 80%;
     margin: auto;
-    text-align: center;
-    margin-top: 50px;
 }
 
-.contenido h2 {
-    color: #60a5fa;
-    margin-bottom: 20px;
-    font-size: 32px;
+h1 {
+    font-size: 36px;
 }
 
-.contenido p {
+span {
+    color: #1e3a8a;
+}
+
+p {
     font-size: 18px;
-    color: #d1d5db;
-    line-height: 1.6;
+    margin-top: 10px;
 }
 
-/* CARDS */
-.cards-servicios {
+h2 {
+    margin-top: 40px;
+    color: #1e3a8a;
+}
+
+.integrantes {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
-.card {
-    width: 260px;
-    background: rgba(255,255,255,0.05);
-    padding: 25px;
-    border-radius: 20px;
+.persona {
     text-align: center;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
+    width: 250px;
+}
+
+.persona img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.links a {
+    border: 2px solid #1e3a8a;
+    padding: 8px 20px;
+    color: #1e3a8a;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
     transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-10px);
+.links a:hover {
+    background-color: #1e3a8a;
+    color: white;
 }
 
-.card h3 {
-    color: #60a5fa;
-    margin-bottom: 10px;
+/* FOOTER */
+footer {
+    border-top: 2px solid #1e3a8a;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
 }
 
-.card p {
+.blog-home {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.Blog-img {
+    width: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 14px;
+    margin-top: 6px;
+    color: #ccc;
+}
+
+.juego {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+.botones {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
     font-size: 16px;
-    color: #d1d5db;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #152a63;
+}
+
+#mensaje {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#intentos {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+
+#modo {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #facc15;
+    background-color: #1e3a8a;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+
+.perdido {
+    color: #ef4444 !important;
+}
+
+.persona {
+    text-align: center;
 }
