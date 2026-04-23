@@ -1,52 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: linear-gradient(135deg, #000000, #111827);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-/* HEADER */
-header {
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #60a5fa;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.menu a:hover {
-    color: #facc15;
-    transform: scale(1.05);
-}
-
-/* HERO INDEX */
+/* ===== HERO INDEX ===== */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
-    padding: 60px;
+    padding: 60px 40px;
     flex-wrap: wrap;
 }
 
@@ -56,18 +14,15 @@ header {
 
 .hero-texto h1 {
     font-size: 50px;
-    text-align: left;
     margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .hero-texto p {
     font-size: 20px;
     color: #d1d5db;
     line-height: 1.6;
-}
-
-span {
-    color: #60a5fa;
+    margin-bottom: 20px;
 }
 
 .hero-imagen img {
@@ -77,9 +32,9 @@ span {
     box-shadow: 0px 8px 25px rgba(0,0,0,0.5);
 }
 
-/* BOTONES HERO */
+/* BOTONES */
 .hero-botones {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .btn-principal,
@@ -90,6 +45,7 @@ span {
     font-weight: bold;
     margin-right: 10px;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .btn-principal {
@@ -99,6 +55,7 @@ span {
 
 .btn-principal:hover {
     background-color: #1d4ed8;
+    transform: scale(1.05);
 }
 
 .btn-secundario {
@@ -111,34 +68,27 @@ span {
     color: white;
 }
 
-/* CONTENIDO GENERAL */
-.presentacion {
-    padding: 50px;
-}
-
+/* SECCIONES */
 .contenido {
     width: 80%;
     margin: auto;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
-h1 {
-    font-size: 40px;
-}
-
-h2 {
+.contenido h2 {
     color: #60a5fa;
     margin-bottom: 20px;
+    font-size: 32px;
 }
 
-p {
+.contenido p {
     font-size: 18px;
     color: #d1d5db;
     line-height: 1.6;
 }
 
-/* CARDS SERVICIOS */
+/* CARDS */
 .cards-servicios {
     display: flex;
     justify-content: center;
@@ -148,7 +98,7 @@ p {
 }
 
 .card {
-    width: 250px;
+    width: 260px;
     background: rgba(255,255,255,0.05);
     padding: 25px;
     border-radius: 20px;
@@ -163,159 +113,10 @@ p {
 
 .card h3 {
     color: #60a5fa;
+    margin-bottom: 10px;
 }
 
-/* ABOUT */
-.integrantes {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-.persona {
-    text-align: center;
-    width: 250px;
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
-    transition: 0.3s;
-}
-
-.persona:hover {
-    transform: translateY(-8px);
-}
-
-.persona img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.links {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.links a {
-    border: 2px solid #60a5fa;
-    padding: 8px 20px;
-    color: #60a5fa;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.links a:hover {
-    background-color: #60a5fa;
-    color: black;
-}
-
-/* BLOG / PROYECTOS */
-.blog-home {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.Blog-img {
-    width: 400px;
-    max-width: 90%;
-    border-radius: 20px;
-    margin-top: 20px;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
-}
-
-.descripcion {
-    font-size: 14px;
-    margin-top: 10px;
-    color: #ccc;
-}
-
-/* JUEGO */
-.juego {
-    text-align: center;
-    width: 450px;
-    max-width: 90%;
-    margin: auto;
-    padding: 30px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 20px;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
-}
-
-.imagen-juego {
-    width: 250px;
-    max-width: 100%;
-    border-radius: 15px;
-    margin: 20px 0;
-}
-
-/* INPUT */
-input {
-    padding: 12px;
-    font-size: 18px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: none;
-    width: 70%;
-    text-align: center;
-}
-
-/* BOTONES */
-button {
-    padding: 12px 25px;
+.card p {
     font-size: 16px;
-    background-color: #1e3a8a;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 10px;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #2563eb;
-    transform: scale(1.05);
-}
-
-/* MENSAJES DEL JUEGO */
-#mensaje {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#intentos {
-    margin-top: 10px;
-    color: #ccc;
-}
-
-#modo {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #facc15;
-    background-color: #1e3a8a;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 12px;
-}
-
-.perdido {
-    color: #ef4444 !important;
-}
-
-/* FOOTER */
-footer {
-    margin-top: auto;
-    text-align: center;
-    padding: 20px;
-    background: rgba(255,255,255,0.03);
-    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #d1d5db;
 }
