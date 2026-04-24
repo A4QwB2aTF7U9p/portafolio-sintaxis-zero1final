@@ -3,12 +3,12 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* HEADER */
 .header {
     padding: 20px;
 }
@@ -26,11 +26,6 @@ body {
     font-weight: bold;
 }
 
-.menu a:hover {
-    color: #3b82f6;
-}
-
-/* CONTENIDO GENERAL */
 .presentacion {
     padding: 50px;
 }
@@ -51,7 +46,6 @@ span {
 p {
     font-size: 18px;
     margin-top: 10px;
-    line-height: 1.6;
 }
 
 h2 {
@@ -59,82 +53,12 @@ h2 {
     color: #1e3a8a;
 }
 
-/* HERO INDEX */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-}
-
-.hero-texto {
-    width: 50%;
-}
-
-.hero-imagen img {
-    width: 400px;
-    max-width: 100%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(30, 58, 138, 0.4);
-}
-
-.hero-botones {
-    margin-top: 20px;
-}
-
-.btn {
-    background-color: #1e3a8a;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-right: 10px;
-    display: inline-block;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #152a63;
-    transform: scale(1.05);
-}
-
-/* CARDS INDEX */
-.cards-servicios {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #111;
-    width: 250px;
-    padding: 20px;
-    border: 2px solid #1e3a8a;
-    border-radius: 15px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-}
-
-.card h3 {
-    color: #1e3a8a;
-}
-
-/* ABOUT */
 .integrantes {
     display: flex;
     justify-content: center;
     gap: 40px;
     margin-top: 40px;
     margin-bottom: 60px;
-    flex-wrap: wrap;
 }
 
 .persona {
@@ -179,7 +103,6 @@ footer {
     margin-top: 40px;
 }
 
-/* BLOG / PROYECTOS */
 .blog-home {
     text-align: center;
     margin-top: 40px;
@@ -198,7 +121,6 @@ footer {
     color: #ccc;
 }
 
-/* JUEGO */
 .juego {
     text-align: center;
 }
@@ -242,6 +164,7 @@ button:hover {
     color: #ccc;
 }
 
+
 #modo {
     margin-top: 15px;
     font-size: 20px;
@@ -253,6 +176,11 @@ button:hover {
     border-radius: 10px;
 }
 
+
 .perdido {
     color: #ef4444 !important;
+}
+
+.persona {
+    text-align: center;
 }
