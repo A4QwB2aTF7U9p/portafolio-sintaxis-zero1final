@@ -4,46 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Número Secreto</title>
+    <title>Número Secreto - Sintaxis Zero</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
-<header>
+<header class="header">
     <nav class="menu">
         <a href="index.html">Inicio</a>
         <a href="About.html">Sobre Nosotros</a>
-
-        <div class="submenu">
-            <div class="submenu-contenido">
-                <a href="Proyectos.html">Proyectos</a>
-            </div>
-        </div>
+        <a href="Proyectos.html">Proyectos</a>
     </nav>
 </header>
 
 <main class="juego">
 
-<h1>Número Secreto</h1>
+    <div class="juego-card">
 
-<img src="assets/NS.jpg" class="imagen-juego">
+        <h1>🎯 Número <span>Secreto</span></h1>
 
-<p>Adivina el número del 1 al 10</p>
+        <!-- IMAGEN -->
+        <img src="assets/NS.jpg" class="imagen-juego" alt="Juego Número Secreto">
 
+        <p class="descripcion-juego">
+            Adivina el número oculto del 1 al 10 antes de quedarte sin intentos.
+        </p>
 
-<p id="modo">  3 intentos</p>
+        <div class="reglas-box">
+            <p id="modo">Tienes 3 intentos</p>
+        </div>
 
+        <input 
+            type="number" 
+            id="numeroUsuario" 
+            placeholder="Ingresa un número"
+            min="1"
+            max="10"
+        >
 
-<input type="number" id="numeroUsuario" placeholder="Ingresa un número" min="1" max="10" step="1">
+        <div class="botones-juego">
+            <button onclick="verificarNumero()">Intentar</button>
+            <button onclick="nuevoJuego()">Nuevo Juego</button>
+        </div>
 
-<br><br>
+        <p id="mensaje"></p>
+        <p id="intentos"></p>
 
-<button onclick="verificarNumero()">Intentar</button>
-<button onclick="nuevoJuego()">Nuevo Juego</button>
-
-<p id="mensaje"></p>
-<p id="intentos"></p>
+    </div>
 
 </main>
 
@@ -51,7 +59,7 @@
     Grupo Sintaxis Zero
 </footer>
 
-<script src="scripts/ns.js"></script>
+<script src="scripts/NS.js"></script>
 
 </body>
 </html>
